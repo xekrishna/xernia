@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: Quirk;
+    src: url(./assets/fonts/Quirk-Free-BF6686f8d7c8c48.otf);
+  }
+  @font-face {
+    font-family: Mighty Marine;
+    src: url(./assets/fonts/mightymarinepersonaluseonly-r9je6.ttf);
+  }
+  @font-face {
+    font-family: Cellofy;
+    src: url(./assets/fonts/CellofyMediumexpanded-K7KY7.otf);
+  }
+}
+
+body {
+  background-color: white;
+  color: black;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-bg {
+  background-image: url(./assets/images/summer.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.btn {
+  border: none;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0;
+  background-color: #ff7e06;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
