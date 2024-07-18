@@ -23,7 +23,7 @@ function Collections() {
   const liProps =
     "bg-slate-500 laptop:max-w-[25%] max-w-[45%] laptop:h-[500px] h-[300px]  object-contain laptop:flex-[0_0_33.3333%] flex-[0_0_50%]  overflow-hidden relative";
   const textProps =
-    "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-3xl text-white uppercase z-10";
+    "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 laptop:text-3xl text-white uppercase z-10";
   return (
     <>
       <AnimatePresence>
@@ -38,7 +38,7 @@ function Collections() {
                 <motion.li>|</motion.li>
                 <motion.li>Premium</motion.li>
               </motion.ul>
-              <motion.p className="text-xs laptop:text-sm laptop:w-[800px] text-center">
+              <motion.p className="text-xs laptop:text-sm laptop:w-[800px] p-2 text-center">
                 Elevate your everyday style with our Old Money collection,
                 meticulously crafted to embody timeless elegance and
                 sophistication. Discover the elegance that sets you apart.

@@ -51,16 +51,16 @@ function Sale() {
 
   return (
     <>
-      <main className="main-bg">
-        <AnimatePresence>
+      <AnimatePresence>
+        <main className="main-bg laptop:h-[100vh] h-[70vh] flex justify-center items-center hover:brightness-[.95] transition duration-300">
           <motion.main
             initial={{ opacity: 0, y: "10px" }}
             animate={{ opacity: 1, y: 0, scale }}
             transition={{ type: "spring", stiffness: 300 }}
-            className=" h-full items-center justify-center flex flex-col pb-16 z-0 hover:brightness-[.95] transition"
+            className="h-max items-center justify-center flex flex-col pb-16 z-0  transition"
           >
             <motion.h1
-              className="font-cormorant font-medium border-b-[1px] whitespace-nowrap  border-b-black text-6xl transition-all"
+              className="font-cormorant font-medium border-b-[1px] whitespace-nowrap laptop:text-6xl text-4xl transition-all"
               initial={{ opacity: 0, y: "10px" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 150 }}
@@ -68,13 +68,13 @@ function Sale() {
               Summer Sale
             </motion.h1>
             <motion.p
-              className="laptop:text-xl font-light uppercase whitespace-nowrap transition-all "
+              className="laptop:text-xl text-sm font-light uppercase whitespace-nowrap transition-all "
               initial={{ opacity: 0, y: "10px" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 150 }}
             >
-              Enjoy upto <span className=" text-amber-800">50% Off</span> on
-              your favourite items
+              Enjoy upto <span className="text-amber-800">50% Off</span> on your
+              favourite items
             </motion.p>
             <motion.ul
               ref={ref}
@@ -82,7 +82,7 @@ function Sale() {
               animate={controls}
               variants={containerVariants}
               style={{ marginBottom: "50px" }}
-              className="flex uppercase gap-10 mt-5 text-md"
+              className="flex uppercase gap-10 mt-5 laptop:text-md text-sm"
             >
               <motion.li variants={itemVariants}>
                 <h2 className={buttonProp}>Men</h2>
@@ -95,7 +95,7 @@ function Sale() {
               </motion.li>
             </motion.ul>
             <motion.button
-              className="uppercase font-medium border-2 border-black text-black backdrop-blur-sm rounded-md font-poppins px-5 py-3 hover:bg-black hover:text-white transition-all"
+              className="uppercase font-medium border-2 border-black text-black backdrop-blur-sm rounded-md font-poppins px-5 py-3 hover:bg-black hover:text-white  transition-all"
               initial={{ opacity: 0, y: "10px" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 150 }}
@@ -103,8 +103,8 @@ function Sale() {
               Shop Now
             </motion.button>
           </motion.main>
-        </AnimatePresence>
-      </main>
+        </main>
+      </AnimatePresence>
     </>
   );
 }
