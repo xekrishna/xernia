@@ -9,7 +9,7 @@ function Home() {
         <section className="w-full h-[100vh]">
           <Sale />
         </section>
-        <section className="w-full laptop:h-[350vh]  ">
+        <section className="w-full laptop:max-h-[350vh] max-h-full ">
           <Collections />
         </section>
       </main>

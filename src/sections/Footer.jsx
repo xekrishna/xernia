@@ -24,7 +24,9 @@ function Footer() {
                   <p>{item.title}</p>
                   <ul className={listProp}>
                     {item.items.map((link, linkIndex) => (
-                      <li key={linkIndex}>{link.title}</li>
+                      <li key={linkIndex} className="text-xs mr-2">
+                        {link.title}
+                      </li>
                     ))}
                   </ul>
                 </motion.div>

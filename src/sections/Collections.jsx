@@ -21,7 +21,7 @@ function Collections() {
   const itemProps =
     "h-full w-full object-cover hover:scale-[1.05] hover:brightness-[0.9] transition-all duration-700";
   const liProps =
-    "bg-slate-500 laptop:max-w-[25%] max-w-[45%] laptop:h-[500px] h-[300px]  object-contain laptop:flex-[0_0_33.3333%] flex-[0_0_50%]  overflow-hidden relative";
+    "bg-slate-500 laptop:max-w-[25%] max-w-[45%] dekstop:max-h-[500px] max-h-[400px]  object-contain laptop:flex-[0_0_33.3333%] flex-[0_0_50%]  overflow-hidden relative";
   const textProps =
     "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 laptop:text-3xl text-white uppercase z-10";
   return (
