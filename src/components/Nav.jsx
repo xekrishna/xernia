@@ -80,7 +80,7 @@ function Nav() {
                   <input
                     type="text"
                     placeholder="Search"
-                    className="w-[500px] bg-white px-1 py-3 outline-none font-poppins font-light "
+                    className="laptop:w-[500px] bg-white px-1 py-3 outline-none font-poppins font-light "
                   />
                 </section>
 

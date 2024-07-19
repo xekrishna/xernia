@@ -13,7 +13,9 @@ function Home() {
           <Collections />
         </section>
       </main>
-      <footer>Footer</footer>
+      <footer className="bg-gray-950 text-white w-full h-full mt-20">
+        <Footer />
+      </footer>
     </>
   );
 }
