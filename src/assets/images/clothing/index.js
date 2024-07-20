@@ -1,28 +1,28 @@
-import coats from "./coats.jpg";
-import footwear from "./footwear.jpg";
-import knitwear from "./knitwear.jpg";
-import pants from "./pants.jpg";
-import shirts from "./shirts.jpg";
-import sweaters from "./sweaters.jpg";
+import kurtaM from "./kurta-male.jpg";
+import sherwani from "./sherwani.jpg";
+import jodhpuri from "./jodhpuri.jpg";
+import pathani from "./pathani.jpg";
+import achkan from "./achkan.jpg";
+import angrakha from "./angrakha.jpg";
 
-import fBlazers from "./f-blazers.jpg";
-import fFootwear from "./f-footwear.jpg";
-import fJackets from "./f-jackets.jpg";
-import fSkirts from "./f-skirts.jpg";
-import fShirts from "./f-shirts.jpg";
-import fSweaters from "./f-sweaters.jpg";
+import saree from "./saree.jpg";
+import lehenga from "./lehenga.jpg";
+import anarkali from "./anarkali.jpg";
+import sharara from "./sharara.jpg";
+import ghagra from "./ghagra.jpg";
+import patiala from "./patiala.jpg";
 
 export {
-  coats,
-  footwear,
-  pants,
-  knitwear,
-  shirts,
-  sweaters,
-  fBlazers,
-  fFootwear,
-  fJackets,
-  fSkirts,
-  fSweaters,
-  fShirts,
+  kurtaM,
+  sherwani,
+  jodhpuri,
+  pathani,
+  achkan,
+  angrakha,
+  saree,
+  lehenga,
+  anarkali,
+  sharara,
+  ghagra,
+  patiala,
 };

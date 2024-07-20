@@ -20,13 +20,11 @@ function Footer() {
           >
             {footerItems.map((item, index) => {
               return (
-                <motion.div key={index} className={divProps}>
+                <motion.div className={divProps}>
                   <p>{item.title}</p>
                   <ul className={listProp}>
                     {item.items.map((link, linkIndex) => (
-                      <li key={linkIndex} className="text-xs mr-2">
-                        {link.title}
-                      </li>
+                      <li className="text-xs mr-2">{link.title}</li>
                     ))}
                   </ul>
                 </motion.div>
@@ -36,12 +34,9 @@ function Footer() {
           <motion.section className="border-t-2 flex flex-col items-center justify-center p-5">
             <img src={logo} alt="xernia" className="w-20" />
             <div className="flex gap-5">
-              {endFooter.map((item, index2) => {
+              {endFooter.map((item) => {
                 return (
-                  <motion.p
-                    key={index2}
-                    className="text-xs uppercase my-5 font-poppins"
-                  >
+                  <motion.p className="text-xs uppercase my-5 font-poppins">
                     {item.title}
                   </motion.p>
                 );

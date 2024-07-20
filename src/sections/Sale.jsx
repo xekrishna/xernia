@@ -57,10 +57,10 @@ function Sale() {
             initial={{ opacity: 0, y: "10px" }}
             animate={{ opacity: 1, y: 0, scale }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="h-max items-center justify-center flex flex-col pb-16 z-0  transition"
+            className="h-full w-full items-center justify-center flex flex-col z-0  transition pt-32 drop-shadow-sm"
           >
             <motion.h1
-              className="font-cormorant font-medium border-b-[1px] whitespace-nowrap laptop:text-6xl text-4xl transition-all"
+              className="font-cormorant font-medium border-b-[1px] border-black whitespace-nowrap laptop:text-6xl text-4xl transition-all"
               initial={{ opacity: 0, y: "10px" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 150 }}
@@ -91,7 +91,7 @@ function Sale() {
                 <h2 className={buttonProp}>Women</h2>
               </motion.li>
               <motion.li variants={itemVariants}>
-                <h2 className={buttonProp}>Kids & Baby</h2>
+                <h2 className={buttonProp}>Children</h2>
               </motion.li>
             </motion.ul>
             <motion.button

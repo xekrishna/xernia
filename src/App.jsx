@@ -14,6 +14,8 @@ import Home from "./Home";
 import { Nav } from "./components";
 import Register from "./Register";
 
+import Preloader from "./components/preloader/preloader";
+
 function App() {
   function ScrollToTop() {
     useEffect(() => {
@@ -25,6 +27,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Preloader />
       <ScrollToTop />
       <nav className="max-h-[10vh] w-full fixed z-50">
         <Nav />
