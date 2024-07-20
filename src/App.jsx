@@ -13,7 +13,7 @@ import Home from "./Home";
 
 import { Nav } from "./components";
 import Register from "./Register";
-import { Shop } from "./sections/shop/Shop";
+import  Shop  from "./sections/shop/Shop";
 
 import Preloader from "./components/preloader/preloader";
 
