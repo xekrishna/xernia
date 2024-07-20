@@ -13,13 +13,13 @@ function Home() {
   return (
     <>
       <main className="  text-black w-full h-full">
-        <section className="w-full h-[100vh]">
+        <section className="w-full h-[100vh] overflow-hidden">
           <Sale />
         </section>
-        <section className="w-full laptop:max-h-[350vh] max-h-full ">
+        <section className="w-full laptop:max-h-[350vh] max-h-full overflow-hidden">
           <Collections />
         </section>
-        <section className="w-full laptop:max-h-[350vh] max-h-full ">
+        <section className="w-full laptop:max-h-[350vh] max-h-full overflow-hidden">
           <Special />
         </section>
       </main>
