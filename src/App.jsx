@@ -13,6 +13,7 @@ import Home from "./Home";
 
 import { Nav } from "./components";
 import Register from "./Register";
+import { Shop } from "./sections/shop/Shop";
 
 import Preloader from "./components/preloader/preloader";
 
@@ -34,6 +35,7 @@ function App() {
       </nav>
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/shop" element={<Shop />}></Route>
         <Route path="/register" element={<Register />}></Route>
       </Routes>
     </BrowserRouter>

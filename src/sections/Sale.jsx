@@ -1,5 +1,6 @@
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
 function Sale() {
@@ -7,6 +8,7 @@ function Sale() {
     "hover:scale-110 transition-all hover:translate-y-[-0.5px] hover:text-amber-800 border-b-2 border-gray-800 px-1 pb-2 hover:pb-0 hover:border-amber-800";
 
   const [scale, setScale] = useState(1);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -99,6 +101,7 @@ function Sale() {
               initial={{ opacity: 0, y: "10px" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 150 }}
+              onClick={() => navigate("/shop")}
             >
               Shop Now
             </motion.button>

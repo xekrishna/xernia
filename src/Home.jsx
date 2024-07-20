@@ -1,6 +1,13 @@
 import React from "react";
 
-import { Collections, Contact, Content, Footer, Sale } from "./sections";
+import {
+  Collections,
+  Contact,
+  Content,
+  Footer,
+  Sale,
+  Special,
+} from "./sections";
 
 function Home() {
   return (
@@ -11,6 +18,9 @@ function Home() {
         </section>
         <section className="w-full laptop:max-h-[350vh] max-h-full ">
           <Collections />
+        </section>
+        <section className="w-full laptop:max-h-[350vh] max-h-full ">
+          <Special />
         </section>
       </main>
       <footer className="bg-gray-950 text-white w-full h-full mt-20">
