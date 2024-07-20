@@ -5,8 +5,8 @@ import { langs } from "./";
 function preloader() {
   const [loading, setLoading] = useState(true);
   const [currentLangIndex, setCurrentLangIndex] = useState(0);
-  const [duration, setDuration] = useState(1000);
-  const [textVisible, setTextVisible] = useState(true);
+  const [duration, setDuration] = useState(1200);
+  const [textVisible, setTextVisible] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,6 +25,10 @@ function preloader() {
     const loaderTimeout = setTimeout(() => {
       setLoading(false);
     }, 500 + (langs.length - 1) * 400);
+
+    const showTextTimeout = setTimeout(() => {
+      setTextVisible(true);
+    }, 200);
 
     return () => {
       clearInterval(interval);
