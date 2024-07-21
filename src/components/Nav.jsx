@@ -1,10 +1,13 @@
 import { logo } from "../assets";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Nav() {
   const [isSearchActive, setIsSearchActive] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -107,20 +110,37 @@ function Nav() {
                 </section>
                 <section className="flex gap-5 font-poppins text-black leading-none">
                   <button>
-                    <span className="btn hidden laptop:block">Shop</span>
+                    <span
+                      className="btn hidden laptop:block"
+                      onClick={() => navigate("/shop")}
+                    >
+                      Shop
+                    </span>
                   </button>
                   <img
                     src={logo}
                     alt="xernia"
                     className="size-28 filter invert object-contain"
+                    onClick={() => navigate("/")}
                   />
                   <button>
-                    <span className="btn hidden laptop:block">Contact</span>
+                    <span
+                      className="btn hidden laptop:block"
+                      onClick={() => navigate("/contact")}
+                    >
+                      Contact
+                    </span>
                   </button>
                 </section>
                 <section className="flex text-black gap-5 text-2xl">
-                  <i className="bx bx-user"></i>
-                  <i className="bx bx-shopping-bag"></i>
+                  <i
+                    className="bx bx-user"
+                    onClick={() => navigate("/register")}
+                  ></i>
+                  <i
+                    className="bx bx-shopping-bag"
+                    onClick={() => navigate("/cart")}
+                  ></i>
                 </section>
               </motion.section>
             )}

@@ -28,6 +28,18 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.cart-item-container {
+  scrollbar-width: 5px;
+}
+
+.cart-item-container::-webkit-scrollbar {
+  width: 3px;
+}
+
+.cart-item-container::-webkit-scrollbar-thumb {
+  background-color: #ff7e06;
+}
+
 .main-bg {
   background-image: url(./assets/images/wedding.jpg);
   background-size: cover;
