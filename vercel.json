@@ -1,0 +1,22 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" },
+    { "source": "/shop", "destination": "/shop" },
+    {
+      "source": "/cart",
+      "destination": "/cart"
+    },
+    {
+      "source": "/register",
+      "destination": "/register"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/404"
+    }
+  ]
+}
